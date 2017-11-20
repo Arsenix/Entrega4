@@ -1,1 +1,346 @@
+#Esta primera parte corresponde a las pruebas en Selenium Web
+########################################
+#Show
+########################################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://lit-mountain-13721.herokuapp.com/" />
+<title>Show</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Show</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/directorios</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Show')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Back</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+########################################
+#Edit
+########################################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://lit-mountain-13721.herokuapp.com/" />
+<title>Edit</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Edit</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/directorios</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=directorio_telefono</td>
+	<td>976578097</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Back</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+########################################
+#Destroy
+########################################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://lit-mountain-13721.herokuapp.com/" />
+<title>Destroy</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Destroy</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/directorios</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Destroy')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+########################################
+#New 
+########################################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://lit-mountain-13721.herokuapp.com/" />
+<title>NewDirectorio</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">NewDirectorio</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/directorios</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=New Directorio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=directorio_nombre</td>
+	<td>Maria</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=directorio_apellido</td>
+	<td>Gonzalez</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=directorio_telefono</td>
+	<td>223198802</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=directorio_direccion</td>
+	<td>Antilco 7260</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Back</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+########################################
+#Destoy no confirmado 
+########################################
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://lit-mountain-13721.herokuapp.com/" />
+<title>destroynoconfirmed</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">destroynoconfirmed</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Destroy')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+
+##########################
+Selenium IDE
+##########################
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package testing;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/**
+ *
+ * @author Arsenix
+ */
+
+public class Testing {
+    
+    WebDriver driver;
+    WebDriverWait wait;
+    
+    
+    public void Entrega4NewDirectorio(){
+        System.setProperty("webdriver.chrome.driver","/Users/Arsenix/Documents/Chrome/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        wait = new WebDriverWait (driver,2);
+        driver.get("https://lit-mountain-13721.herokuapp.com/");
+        NewDirectorio();
+    
+    }
+    public void Entrega4Destroy(){
+        System.setProperty("webdriver.chrome.driver","/Users/Arsenix/Documents/Chrome/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        wait = new WebDriverWait (driver,2);
+        driver.get("https://lit-mountain-13721.herokuapp.com/");
+        Destroy();
+    
+    }
+    
+    public void Entrega4Edit(){
+        System.setProperty("webdriver.chrome.driver","/Users/Arsenix/Documents/Chrome/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        wait = new WebDriverWait (driver,2);
+        driver.get("https://lit-mountain-13721.herokuapp.com/");
+        Edit();
+    
+    }
+    
+    public void Entrega4Show(){
+        System.setProperty("webdriver.chrome.driver","/Users/Arsenix/Documents/Chrome/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        wait = new WebDriverWait (driver,2);
+        driver.get("https://lit-mountain-13721.herokuapp.com/");
+        Show();
+    
+    }
+    public void Entrega4DestroyNoConfirmed(){
+        System.setProperty("webdriver.chrome.driver","/Users/Arsenix/Documents/Chrome/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        wait = new WebDriverWait (driver,2);
+        driver.get("https://lit-mountain-13721.herokuapp.com/");
+        DestroyNoConfirmed();
+    
+    }
+   
+    void NewDirectorio(){
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[5]/a")).click(); 
+        wait = new WebDriverWait (driver,2);
+    }
+    void Destroy(){
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[7]/a")).click(); 
+        wait = new WebDriverWait (driver,2);
+         
+    }
+    void Edit(){
+      driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[6]/a")).click(); 
+      driver.findElement(By.xpath("/html/body/form/div[1]")).sendKeys("Joaquin");
+      driver.findElement(By.xpath("/html/body/form/div[5]/input")).click();
+      wait = new WebDriverWait (driver,2);  
+    }
+    
+    void Show(){
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[1]/td[5]/a")).click();
+        driver.findElement(By.xpath("/html/body/a[2]")).click();
+    }
+    void DestroyNoConfirmed(){
+        driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[7]/a")).click();
+        driver.findElement(By.xpath("")).click(); #No es posible acceder al elemento.
+        wait = new WebDriverWait (driver,2);
+         
+    }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Testing navegador = new Testing(); 
+        navegador.Entrega4NewDirectorio();
+        navegador.Entrega4Destroy();
+        navegador.Entrega4Edit();
+        navegador.Entrega4Show();
+        navegador.Entrega4DestroyNoConfirmed();
+        
+
+    }
+    
+}
 
